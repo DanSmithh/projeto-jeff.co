@@ -1,8 +1,8 @@
 # Jeff.Co :octocat:
 
-Projeto de uma aplicação desenvolvida utilizando todas tecnologias abordadas no bootcamp DIO
+Projeto de uma aplicação desenvolvida utilizando todas tecnologias abordadas no curso de desenvolvimento Web Full Stack da Digital house.
 
-
+[Apresentação do projeto](https://www.linkedin.com/posts/daniel-oliveira-8234aa1a7_nodejs-css-html-activity-6943358742386098176-zu7I)
 
 ## Tecnologias/Bibliotecas :rocket:
 
