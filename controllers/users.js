@@ -1,4 +1,4 @@
-const usuariosPlaceholder = require('../server/data/usuariosPlaceholder.json');
+const usuariosPlaceholder = require('../data/usuariosPlaceholder.json');
 
 const controller = {
   index: (req, res, next) => {
