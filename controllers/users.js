@@ -1,4 +1,4 @@
-const usuariosPlaceholder = require('../data/usuariosPlaceholder.json')
+const usuariosPlaceholder = require('../server/data/usuariosPlaceholder.json');
 
 const controller = {
   index: (req, res, next) => {
@@ -9,12 +9,12 @@ const controller = {
       usuarioLogado: req.cookies.usuario,
       usuarioAdmin: req.cookies.admin,
       bannerTopo: '/images/banner-topo-usuarios-1564x472.png',
-      bannerMeio: '/images/banner-meio-usuarios-1920x1080.png'
+      bannerMeio: '/images/banner-meio-usuarios-1920x1080.png',
     });
   },
   show: (req, res, next) => {
-    const { id } = req.params
-    const usuario = usuariosPlaceholder[id]
+    const { id } = req.params;
+    const usuario = usuariosPlaceholder[id];
     res.render('user', {
       titulo: 'Usuário',
       subtitulo: `Usuário #${id}`,
@@ -22,11 +22,11 @@ const controller = {
       usuarioLogado: req.cookies.usuario,
       usuarioAdmin: req.cookies.admin,
       bannerTopo: '/images/banner-topo-usuario-1564x472.png',
-      bannerMeio: '/images/banner-meio-usuario-1920x1080.png'
+      bannerMeio: '/images/banner-meio-usuario-1920x1080.png',
     });
   },
   list: (req, res, next) => {
-    let admin = req.cookies.admin
+    let admin = req.cookies.admin;
     if (!admin || admin === 'false') {
       res.render('users', {
         titulo: 'Ops!',
@@ -35,7 +35,7 @@ const controller = {
         usuarioLogado: req.cookies.usuario,
         usuarioAdmin: admin,
         bannerTopo: '/images/banner-topo-usuarios-1564x472.png',
-        bannerMeio: '/images/banner-meio-usuarios-1920x1080.png'
+        bannerMeio: '/images/banner-meio-usuarios-1920x1080.png',
       });
     } else {
       res.render('usersList', {
@@ -43,10 +43,10 @@ const controller = {
         subtitulo: 'Listagem de Usuários',
         usuarios: usuariosPlaceholder,
         usuarioLogado: req.cookies.usuario,
-        usuarioAdmin: admin
+        usuarioAdmin: admin,
       });
     }
-  }
-}
+  },
+};
 
-module.exports = controller
+module.exports = controller;
