@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'jeffco'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E3AC7B1043A0459B87060B28C2237F5F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_743D8F1F983F4B33A02408EDE03EEE33 }}
           package: .
